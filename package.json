@@ -12,7 +12,12 @@
     "eslint": "eslint --ext .js .",
     "test": "cross-env NODE_ENV=test mocha -r @babel/register --recursive 'src/**/*.spec.js*'"
   },
-  "dependencies": {},
+  "dependencies": {
+    "abab": "^2.0.5",
+    "jsonpath-plus": "^4.0.0",
+    "lodash": "^4.17.20",
+    "xml2js": "^0.4.23"
+  },
   "devDependencies": {
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.10",

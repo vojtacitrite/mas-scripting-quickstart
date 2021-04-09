@@ -1,4 +1,5 @@
 /node_modules
+/local-resources
 /.idea
 *.impl
 /.vscode

@@ -20,7 +20,12 @@ module.exports = {
     }
 
   ],
+  globals: {
+    integration: 'readonly'
+  },
   rules: {
-    'no-unused-vars': ['warn', { args: 'after-used', ignoreRestSiblings: false }]
+    'no-unused-vars': ['warn', { args: 'after-used', ignoreRestSiblings: false }],
+    'space-before-function-paren': 'off',
+    'quote-props': ['warn', 'as-needed']
   }
 }
