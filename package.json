@@ -1,34 +1,38 @@
 {
-  "name": "mas-scripting-quickstart",
-  "version": "1.0.0",
-  "description": "Minimal Javascript project setup to develop and test MAS scripts",
-  "repository": {
-    "type": "git",
-    "url": "ssh://git@code.citrite.net/~vojtechs/mas-scripting-quickstart.git"
-  },
-  "author": "Citrix",
-  "license": "ISC",
-  "scripts": {
-    "eslint": "eslint --ext .js .",
-    "test": "cross-env NODE_ENV=test mocha -r @babel/register --recursive 'src/**/*.spec.js*'"
-  },
-  "dependencies": {
-    "abab": "^2.0.5",
-    "jsonpath-plus": "^4.0.0",
-    "lodash": "^4.17.20",
-    "xml2js": "^0.4.23"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.13.10",
-    "@babel/preset-env": "^7.13.10",
-    "@babel/register": "^7.13.8",
-    "chai": "^4.3.4",
-    "cross-env": "^7.0.3",
-    "eslint": "^7.22.0",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.3.1",
-    "mocha": "^8.3.2"
-  }
+    "name": "mas-scripting-quickstart",
+    "version": "1.0.0",
+    "description": "Minimal Javascript project setup to develop and test MAS scripts",
+    "repository": {
+        "type": "git",
+        "url": "ssh://git@code.citrite.net/~vojtechs/mas-scripting-quickstart.git"
+    },
+    "author": "Citrix",
+    "license": "ISC",
+    "scripts": {
+        "lint": "eslint --ext .js .",
+        "prettier": "prettier --check .",
+        "prettier:write": "prettier --write .",
+        "test": "cross-env NODE_ENV=test mocha -r @babel/register --recursive 'src/**/*.spec.js*'"
+    },
+    "dependencies": {
+        "abab": "^2.0.5",
+        "jsonpath-plus": "^4.0.0",
+        "lodash": "^4.17.20",
+        "xml2js": "^0.4.23"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.13.10",
+        "@babel/preset-env": "^7.13.10",
+        "@babel/register": "^7.13.8",
+        "chai": "^4.3.4",
+        "cross-env": "^7.0.3",
+        "eslint": "^7.22.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-config-standard": "^16.0.2",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^4.3.1",
+        "mocha": "^8.3.2",
+        "prettier": "2.2.1"
+    }
 }
