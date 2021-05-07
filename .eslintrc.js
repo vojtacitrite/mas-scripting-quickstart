@@ -18,6 +18,7 @@ module.exports = {
     ],
     globals: {
         integration: 'readonly',
+        library: 'readonly',
     },
     rules: {
         'no-unused-vars': ['warn', {args: 'after-used', ignoreRestSiblings: false}],
